@@ -1,0 +1,21 @@
+Evidence of Testing
+1. Manual Testing Execution:
+   - Performed manual execution of user registration, login, and dashboard access (TC-01 to TC-20).
+   - Validated boundary conditions (Name length, Password length) and rate limiting logic.
+   - Confirmed 409 Conflict behavior for duplicate email registration.
+
+2. Automation Scripting:
+   - Scripts written in Playwright (auth.spec.js) covering 5 key scenarios.
+   - Code logic reviewed for element selection and assertions.
+   - Key flows automated:
+     a. Registration (Happy Path)
+     b. Duplicate Email handling
+     c. Login (Happy Path)
+     d. Invalid Login handling
+     e. Unauthenticated Access Redirection
+
+3. Summary:
+   - Test cases are structured to cover Frontend (UI) and Backend (API) validation rules.
+   - Automation scripts are ready for execution in a CI/CD environment.
+
+End of evidence.

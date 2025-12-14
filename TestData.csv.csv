@@ -1,0 +1,11 @@
+TD ID,Scenario Type,Name,Email,Password,Confirm Password,Remarks
+TD-01,Valid User,Rahul Sharma,rahul@gmail.com,Test@12345678,Test@12345678,Valid registration data
+TD-02,Valid User,Neha Verma,neha.verma@gmail.com,Pass@12345678,Pass@12345678,Another valid user
+TD-03,Duplicate Email,User One,rahul@gmail.com,Test@12345678,Test@12345678,Email already exists
+TD-04,Invalid Email,Amit Kumar,amit@,Test@12345678,Test@12345678,Invalid email format
+TD-05,Invalid Email,Suresh Patel,sureshgmail.com,Test@12345678,Test@12345678,Missing @ symbol
+TD-06,Weak Password,Riya Singh,riya@gmail.com,Test123,Test123,Password less than 12 characters
+TD-07,Weak Password,Mohit Jain,mohit@gmail.com,PasswordOnly,PasswordOnly,Password without numbers
+TD-08,Special Characters,An@sh,ansh@gmail.com,Test@12345678,Test@12345678,Name contains special character
+TD-09,Unicode Characters,राहुल,rahul.hi@gmail.com,Test@12345678,Test@12345678,Name contains Unicode characters
+TD-10,Leading/Trailing Spaces,Karan Mehta,karan@gmail.com,Test@12345678,Test@12345678,Email has leading/trailing spaces

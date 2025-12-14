@@ -1,0 +1,12 @@
+BC ID,Field,Test Condition,Input Example,Expected Result
+BC-01,Name,Length less than minimum,Ravi (4 characters),Validation error is displayed
+BC-02,Name,Length at minimum boundary,Rahul (5 characters),Name is accepted
+BC-03,Name,Length at maximum boundary,RahulKumarSinghTesting (24 characters),Name is accepted
+BC-04,Name,Length more than maximum,RahulKumarSinghTestingQA (25 characters),Validation error is displayed
+BC-05,Password,Length less than minimum,Test@1234567 (11 characters),Validation error is displayed
+BC-06,Password,Length at minimum boundary,Test@12345678 (12 characters),Password is accepted
+BC-07,Email,Uppercase email,RAHUL@GMAIL.COM,Email converted to lowercase and accepted
+BC-08,Email,Leading/trailing spaces,rahul@gmail.com,Spaces trimmed or validation error shown
+BC-09,Email,Long valid email,rahul.testing.user123456@gmail.com,Email is accepted
+BC-10,Login Attempts,At rate limit,10 failed attempts,Login attempts allowed
+BC-11,Login Attempts,Exceed rate limit,11 failed attempts,429 Too Many Requests error
